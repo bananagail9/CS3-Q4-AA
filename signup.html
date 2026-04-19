@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+
+    <link rel="stylesheet" href="style5.css">
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id = "top">
+        <h4 class="jost">Submitted by: Zyanna Gail P. Deguito 9 - Barium</h4>
+    </header>
+
+    <main>
+    <section id="main section">
+        <header>
+            <img id="logo" alt="Logo" src="Logo.png">
+            <h1 class="header jost" id="title">Happy Heart, Happy Life<br>Sign-Up Form</h1>
+        </header>
+        <br>
+        <form onsubmit="validateForm(); return false;">
+            <!-- Personal Information -->
+            <section class="odd">
+                <div class="question-box">
+                    <label class="jost" for="fname">Full Name:</label><br>
+                    <input class="jost" type="text" id="fname" name="fname"><br>
+                    <span id="fnameEr" class="jost"></span>
+                </div>
+
+                <div class="question-box">
+                    <label class="jost" for="bday">Birthdate:</label><br>
+                    <input class="jost" type="date" id="bday" name="bday"><br>
+                    <span id="bdayEr" class="jost"></span>
+                </div>
+
+                <div class="question-box">
+                    <p class="jost">Sex:</p>
+                    <input class="jost" type="radio" id="male" name="sex">
+                    <label class="jost" for="male">Male</label><br>
+                    <input class="jost" type="radio" id="female" name="sex">
+                    <label class="jost" for="female">Female</label><br>
+                    <span id="sexEr" class="jost"></span>
+                </div>
+
+                <div class="question-box">
+                    <label class="jost" for="email">Email:</label><br>
+                    <input class="jost" type="email" id="email" name="email"><br>
+                    <span id="emailEr" class="jost"></span>
+                </div>
+            </section>
+
+            <!-- Account Fields -->
+            <section class="even">
+                <div class="question-box">
+                    <label class="jost" for="username">Username:</label><br>
+                    <input class="jost" type="text" id="username" name="username"><br>
+                    <span id="usernameEr" class="jost"></span>
+                </div>
+
+                <div class="question-box">
+                    <label class="jost" for="pass">Password:</label><br>
+                    <input class="jost" type="password" id="pass" name="pass"><br>
+                    <span id="passwEr" class="jost"></span>
+                </div>
+
+                <div class="question-box">
+                    <label class="jost" for="confpass">Confirm Password:</label><br>
+                    <input class="jost" type="password" id="confpass" name="confpass"><br>
+                    <span id="confpassEr" class="jost"></span>
+                </div>
+            </section>
+
+            <!-- Topic Question -->
+            <section class="odd">
+                <div class="question-box">
+                    <label class="jost" for="selfLove">How much do you love and understand yourself?</label><br>
+                    <select class="jost" id="selfLove" name="selfLove">
+                        <option value="">-- choose --</option>
+                        <option value="notreally">Not Really</option>
+                        <option value="notmuch">Not Much</option>
+                        <option value="average">Average</option>
+                        <option value="aboveaverage">Above Average</option>
+                        <option value="verymuch">Very Much</option>
+                    </select><br>
+                    <span id="selfLoveEr" class="jost"></span>
+                </div>
+
+                <div class="question-box">
+                    <p class="jost">What are your health goals? (Select at least one):</p>
+                    <input type="checkbox" name="goals" value="weight" id="g1"> <label for="g1" class="jost">Weight Loss</label><br>
+                    <input type="checkbox" name="goals" value="muscle" id="g2"> <label for="g2" class="jost">Build Muscle</label><br>
+                    <input type="checkbox" name="goals" value="mental" id="g3"> <label for="g3" class="jost">Mental Clarity</label><br>
+                    <span id="goalsEr" class="jost"></span>
+                </div>
+
+                <div class="question-box">
+                    <label class="jost" for="comments">Any other health concerns (optional)?</label><br>
+                    <textarea id="comments" name="comments" rows="3" class="jost"></textarea><br>
+                </div>
+            </section>
+
+            <!-- Submit button with Success Message -->
+            <section class="even">
+                <div class="jost" style="text-align: center;">
+                    <input class="jost" type="submit" value="Sign Up">
+                    <p id="messageSuccess" class="jost"></p>
+                </div>
+            </section>
+        </form>
+    </section>
+</main>
+
+    <footer>
+        <h4 class="jost">© Happy Heart, Happy Life. All Rights Reserved 
+            <a id="sources" href="https://docs.google.com/document/d/1Q48yu9z3Flpj7Hf9c45jUjMF1hkk3dMpSmtRZOviAbs/edit?usp=sharing">Sources</a>
+        </h4>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* font used */
+.jost{
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+}
+
+
+/* margin of body to narrow it */
+body{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+
+/* removing of margin */
+*{
+    margin: 0%;
+}
+
+/* css for the top part (the submitted part) */
+header#top, #messageSuccess{
+    background-color: rgb(223, 69, 69);
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+}
+
+/* css for the bottom part (here lies the sources) */
+footer{
+    background-color: rgb(223, 69, 69);
+    text-align: center;
+    padding: 10px;
+    padding-top: 5px;
+    color: rgb(255, 255, 255);
+}
+
+#sources{
+    color: rgb(255, 255, 255);
+}
+
+main{
+    background-color: rgb(223, 69, 69);
+}
+
+.odd {
+    background-color: rgb(251, 95, 95);
+    overflow: auto;
+}
+
+.even {
+  background-color: rgb(243, 85, 85);
+    overflow: auto;
+}
+
+header{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(249, 203, 67);
+}
+
+#title{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(60, 152, 21);
+    text-align: center;
+    font-size: 175%;
+}
+
+#logo{
+    border-radius: 15px; 
+    width: 100px; 
+    height: 100px;
+    margin-left: 282px;
+}
+
+/* error spans css */
+span {
+    color: #D22B2B; /* A darker red so it's readable on yellow */
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+    margin-top: 5px;
+}
+
+/* css for the question boxes */
+.question-box {
+    background-color: #F9CB43; /* Yellow from your image */
+    color: #3C9815;           /* Green from your image */
+    padding: 15px;
+    margin-left: 125px;
+    margin-right: 15px;             /* Space between the yellow boxes */
+    margin-top: 15px;  
+    margin-bottom: 15px;  
+    border-radius: 12px;      /* Rounded corners like the image */
+    width: 55%;
+}
+
+/* css for the questions or the labels, and the p */
+.question-box label, .question-box p {
+    color: #3C9815;
+    font-weight: bold;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #3C9815;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 15px;   
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* for submit button when hovered */
+input[type="submit"]:hover {
+    background-color: #2e7510;
+}
